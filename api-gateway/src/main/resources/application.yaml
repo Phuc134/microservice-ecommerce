@@ -1,0 +1,13 @@
+server:
+  port: 8888
+  application:
+    name: api-gateway
+spring:
+  cloud:
+    gateway:
+      mvc:
+        routes:
+        - id: profile_service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/profile/**
