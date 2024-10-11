@@ -22,8 +22,8 @@ import java.util.Map;
 @FieldDefaults(level = lombok.AccessLevel.PRIVATE, makeFinal = true)
 public class NotificationService {
     EmailClient emailClient;
-    @Value("${apiKey.email}")
-    String apiKey;
+    String apiKey = "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";
+
     public String sendEmail(SendEmailRequest request) {
         Sender sender = Sender.builder()
                 .name("phuc")
