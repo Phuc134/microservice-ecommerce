@@ -13,3 +13,5 @@ spring:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+apiKey:
+  email: "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"
